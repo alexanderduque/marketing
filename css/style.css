@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+/* Estilos generales */
+html {
+    box-sizing: border-box;
+
+}
+
+/*SCROLL SECCIONES*/
+.servicio,
+.nav-principal,
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+:root {
+    --blanco: #ffffff;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+    border-radius: 3rem;
+    background-color: darkgrey;
+    font-size: 1.7rem;
+    text-align: center;
+
+}
+
+
+h2 {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+body {
+    background-image: linear-gradient(to top, #DFE9F3 60%, #fff 100%);
+}
+
+.sombra {
+    margin-top: 15px;
+    -webkit-box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.64);
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.64);
+    background-color: white;
+
+}
+
+.boton {
+    background-color: #45979f;
+    color: white;
+    padding: .6rem 1rem;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: .7rem;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 90%;
+    text-align: center;
+    border: none;
+
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+/* Tamaño img todas las sections*/
+.contenedor-main img {
+    width: 60px;
+    height: 60px;
+}
+
+.contenedor-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 15px;
+
+
+}
+
+.contenedor-main p {
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+}
+
+
+/* nav de la pagina*/
+.nav-bg {
+
+
+    background: rgb(18, 89, 96);
+    background: linear-gradient(30deg, rgba(18, 89, 96, 1) 40%, rgba(212, 100, 59, 1) 88%);
+
+}
+
+/*enlaces del nav de la pagina*/
+.nav-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-principal a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1rem;
+
+}
+
+.nav-principal a:hover {
+    background-color: rgb(199, 216, 210);
+    border-radius: 1rem;
+    color: black;
+}
+
+/*titulo principal*/
+
+.section-titulo {
+
+    height: 380px;
+    background-image: url(../img/notas-iPhone.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+}
+
+.titulo h1,
+.titulo p {
+    color: white;
+}
+
+.pin {
+    display: flex;
+    align-items: center;
+}
+
+/*SECCION SERVICIOS*/
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.servicio h3 {
+    color: rgb(206, 72, 23);
+    font-weight: bold;
+    font-family: 'Alkatra', cursive;
+    font-family: 'DM Serif Display', serif;
+
+}
+
+.servicio p {
+    line-height: 2;
+    text-align: center;
+}
+
+.servicio .icon-servicio {
+    height: 10rem;
+    width: 10rem;
+    background: rgb(69, 151, 159);
+    background: radial-gradient(circle, rgba(69, 151, 159, 1) 59%, rgba(228, 225, 221, 1) 96%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*formulario*/
+
+.formulario {
+    background-color: gray;
+    width: min(60rem, 80%);
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
+
+.contenedor-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 10rem;
+    column-gap: 1rem;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: whitesmoke;
+}
+
+.form-h2 {
+    margin-top: 2rem;
+}
+
+
+.campos-form {
+    margin-bottom: 1rem;
+}
+
+.campos-form label {
+    color: white;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+
+}
+
+
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.w-sm-100 {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+
+}
+
+.alinear-right {
+    margin-top: .5rem;
+    justify-content: flex-end;
+}
+
+.campos-form textarea {
+    height: 8rem;
+    resize: none;
+}
+
+
+/*footer*/
+footer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 850px) {
+    .nav-bg {
+
+        background: rgb(18, 89, 96);
+        background: linear-gradient(90deg, rgba(18, 89, 96, 1) 27%, rgba(228, 225, 221, 1) 50%, rgba(212, 100, 59, 1) 68%);
+
+    }
+
+    h1 {
+        margin: 0 auto;
+        text-align: center;
+        width: 40%;
+        border-radius: 5rem;
+        background-color: darkgrey;
+        font-size: 1.7rem;
+    }
+
+    .formulario legend {
+        font-size: 1.5rem;
+    }
+
+    .formulario-all {
+        margin: 0 auto;
+
+
+    }
+
+    .contenedor-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto 10rem;
+        column-gap: 1rem;
+    }
+
+    .campos-form:nth-child(3),
+    .campos-form:nth-child(4) {
+        grid-column: 1/ 3;
+    }
+
+    .nav-principal {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .boton {
+        width: auto;
+    }
+
+    .servicios-grid {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
+
+    .w-sm-100 {
+        width: auto;
+    }
+
+    .alinear-right {
+        grid-column: 2 / 3;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .servicio .icon-servicio {
+        height: 12rem;
+        width: 12rem;
+
+    }
+}
+
+@media (max-width: 1275px) {
+
+    .servicio p {
+        font-size: 12px;
+    }
+}
